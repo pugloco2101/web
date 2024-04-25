@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Pagina Producto</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>UT Market</h1>
+		</header>
+
+		<div class="container-title">Zapatos</div>
+
+		<main>
+			<div class="container-img">
+				<img
+					src="https://vasari.vteximg.com.br/arquivos/ids/215284-500-500/VZC175916-NG-32.jpg?v=638162426696030000"
+					alt="imagen-producto"
+				/>
+			</div>
+			<div class="container-info-product">
+				<div class="container-price">
+					<span>$200.00</span>
+					<i class="fa-solid fa-angle-right"></i>
+				</div>
+
+				<div class="container-details-product">
+					<div class="form-group">
+						<label for="colour">Color</label>
+						<select name="colour" id="colour">
+							<option disabled selected value="">
+								Escoge una opción
+							</option>
+							<option value="rojo">Rojo</option>
+							<option value="blanco">Blanco</option>
+							<option value="beige">Beige</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="size">Talla</label>
+						<select name="size" id="size">
+							<option disabled selected value="">
+								Escoge una opción
+							</option>
+							<option value="40">27</option>
+							<option value="42">28</option>
+							<option value="43">29</option>
+							<option value="44">30</option>
+						</select>
+					</div>
+					<button class="btn-clean">Limpiar</button>
+				</div>
+
+				<div class="container-add-cart">
+					<div class="container-quantity">
+						<input
+							type="number"
+							placeholder="1"
+							value="1"
+							min="1"
+							class="input-quantity"
+						/>
+						<div class="btn-increment-decrement">
+							<i class="fa-solid fa-chevron-up" id="increment"></i>
+							<i class="fa-solid fa-chevron-down" id="decrement"></i>
+						</div>
+					</div>
+					<button class="btn-add-to-cart">
+						<i class="fa-solid fa-plus"></i>
+						Añadir al carrito
+					</button>
+				</div>
+
+				<div class="container-description">
+					<div class="title-description">
+						<h4>Descripción</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-description">
+						<p>
+							Quieres tener un calzado con nuestros colores, amas la universidad, entonces el calzado con estilo ut es para ti, disfruta de nuestro calzado para ti.
+						</p>
+					</div>
+				</div>
+
+				<div class="container-additional-information">
+					<div class="title-additional-information">
+						<h4>Información adicional</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-additional-information hidden">
+						<p>-----------</p>
+					</div>
+				</div>
+
+				<div class="container-reviews">
+					<div class="title-reviews">
+						<h4>Reseñas</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-reviews hidden">
+						<p>-----------</p>
+					</div>
+				</div>
+
+				<div class="container-social">
+					<span>Compartir</span>
+					<div class="container-buttons-social">
+						<a href="#"><i class="fa-solid fa-envelope"></i></a>
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-twitter"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="https://www.paypal.com/sdk/js?client-id=BAAUskNHis1VgaKvVVYQZ1jM6Ga5EzwgWxw6WxDTgMxy3u1mZrgayu565qUh-uEuIYJx_vrnqmarm9Shb0&components=hosted-buttons&disable-funding=venmo&currency=MXN"></script>
+		<div id="paypal-container-75CSA6UMEDTFW"></div>
+		<script>
+		  paypal.HostedButtons({
+			hostedButtonId: "75CSA6UMEDTFW",
+		  }).render("#paypal-container-75CSA6UMEDTFW")
+		</script>
+
+		<section class="container-related-products">
+			<h2>Productos Relacionados</h2>
+			<div class="card-list-products">
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="https://unidenstore.com/store/42-home_default/sueter-campusut.jpg"
+							alt="producto-1"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>sueter-campusut</h3>
+							<p class="category">Deportes</p>
+						</div>
+						<div class="price">$85.00</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="https://utbbstore.com/prestashop/img/p/2/7/27-home_default.jpg"
+							alt="producto-2"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Termo</h3>
+							<p class="category">Uso cotidiano</p>
+						</div>
+						<div class="price">$20.00</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="https://mdev.com.mx/MoorCatShop/39-large_default/usbut.jpg"
+							alt="producto-3"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>USB</h3>
+							<p class="category">Tecnologia</p>
+						</div>
+						<div class="price">$150.00</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="https://unidenstore.com/store/54-large_default/llavero-jaguarundi.jpg"
+							alt="producto-4"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Llavero jaguarundi UT</h3>
+							<p class="category">Accesorios</p>
+						</div>
+						<div class="price">$50.00</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="https://university-market.com/tienda/26-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+							alt="producto-4"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Cuaderno</h3>
+							<p class="category">Utiles</p>
+						</div>
+						<div class="price">$45.00</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<p>Footer</p>
+		</footer>
+
+		<script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="index.js"></script>
+	</body>
+	
+</html>
